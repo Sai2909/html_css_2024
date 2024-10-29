@@ -1,0 +1,273 @@
+**HTML**
+1.what is HTML AND HTML5 diff?
+=>HTML stands for "HyperText Markup Language".
+=>It is used to "design web pages using a markup language."
+=>HTML is a combination of "Hypertext" and "Markup language".
+=>Hypertext defines the "link between the web pages". 
+=>The markup language is used to define the "text document within the tag".
+=>HTML is used to "structure the website" and is therefore "used for Web Development".
+
+html                                                    html5
+=>It didn’t support audio and video              =>It supports audio and video controls with the use of <audio> and <video> tags.
+without the using the third parties liberys.
+
+=>It does not allow drag-and-drop effects.       =>It allows drag-and-drop effects and support target blank attribute.
+                             https://web.dev/articles/drag-and-drop
+
+=>Elements like nav and header were not present  =>New elements for web structure like nav, header, footer, etc.
+=>less mobile-friendly                           =>more mobile-friendly.
+
+
+**************************************************************************
+
+2.what is !Doctype?
+=> DOCTYPE for HTML5 is case-insensitive
+=>Doctype declartion 'specifies the version of html' it is, and "how to interupt the code".
+
+
+**************************************************************************
+
+3.what <div> and <span> diff?
+=> <div> tag is used as the block component,
+=>so <div> is  block-level element so its  always starts on a new line.
+=> <span> tag is used as an inline component.
+=>so <span> is inline element so its does not start on a new line.
+
+
+<div>
+    Hello Manchala
+    <span>
+        Saikiran
+    <span>
+</div>
+
+******************************************************************************
+4.what are semantic elements?
+=>HTML5 introduces many semantic elements.
+=>which make the code easier to write and understand for the developer as well as instruct the browser on how to treat them.
+
+ex:
+article,header,footer,main,nav,section..etc.
+********************************************************************************
+
+5.what is Box Model ?
+=>The CSS Box model defines how elements are rendered and how their dimensions are calculated.
+=>It describes the structure of an element as a rectangular box that has content, padding, a border, and a margin.
+=>Content:
+=>Box Model is the actual content of the element.
+=>It can be text, image, video, etc.
+=>The content area is defined by the width and height properties.
+Padding:
+=>space between the actual content and the border of the element is the padding.
+Border:
+=>The border surrounds the content and padding and gives the visual border of the element.
+Margin:
+=>The margin is the space outside the element that separates it from other elements in the layout
+************************************************************************************
+
+6.what is webWorkers ?
+=>When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.
+=>A web worker is a JavaScript that runs in the background, independently of other scripts, without affecting the performance of the page
+********************************************************************************
+7.what are void elements?
+=>The elements that only have start tags and do not contain any content within it, these elements are called Void Elements. 
+=>It can only have attributes but does not contain any kind of content.
+
+Example of such elements are <br>, <hr>, <img>, <input>, <link>, <base>, <meta>, <param>, <area>, <embed>, <col>, <track>, <source> etc.
+
+**********************************************************************************
+8.can u write the code of  nested list?
+
+ex:
+ <h1>Nested List </h1>
+  <ul>
+    <li>Front end
+    <ul>
+        <li>Javascript</li>
+        <li>Html</li>
+    </ul>
+    </li>
+ </ul>
+ <ul>
+    <li>Backend
+    <ul>
+        <li>Javascript</li>
+        <li>Html</li>
+    </ul>
+    </li>
+ </ul>
+************************************************************************************
+9.what is html tags and html elements?
+=>Tags are the starting and ending parts of an HTML element. Ex:<b> </b>  
+=>Elements enclose the contents in between the tags. Ex:<b>Sai</b>
+
+*************************************************************************************
+10.attributes
+=>attribute is used to provide extra or additional information about an element.
+**************************************************************************************
+
+
+
+**CSS**
+1.what is Inline/Internal/External ?
+**Inline
+=>Inline style may applay a unique  style for a single element.
+=>To use inline styles add the style  attribute to the relavent element.
+=>the style attribute can contain any css property.
+ex:
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2 style="color:red; background-color:blue">Hello Manchala...!</h2>
+</body>
+</html>
+
+**Internal
+=>An internal style sheet may be used if one single HTML page has a unique style.
+=>the internal style is defined inside the head section  inside  <style> 
+
+ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            color: red;
+            background-color: blue
+        }
+    </style>
+</head>
+<body>
+    <h2>Hello Manchala...!</h2>
+</body>
+</html>
+
+
+**External
+=>with external css you can change the look of an entire website  by  changinng just one file.
+=>each HTML page must include a reference  to the external style sheet file inside the <link> element , inside the head selection.
+
+ex:
+<head>
+<link rel='stylesheet' href="mystyle.css">
+</head>
+
+********************************************************************************
+
+2.what is flex and grid?
+CSS Grid and CSS Flexbox are both powerful layout systems in CSS,both are used to  creating responsive and flexible layouts.
+ flexbox was designed for layout in one dimension - either a row or a column.
+Grid was designed for two-dimensional layout - rows, and columns at the same time.
+
+********************************************************************************
+3.what are Css selectors?
+1.elememt selector:
+=>The element selector selectS HTML elememt based on the elememt name.
+p{
+    text-align:center;
+    color:red;
+} 
+
+2.class selector:
+=>the class selector selectS HTML elements with a specific class attribute.
+=>to select elememts  with a specific class,write a period ( . ) character.
+.top-header{
+ text-align:center;
+ color:red;
+} 
+3.id selector:
+=>the id selector uses the id attribute of an HTML  elememt to select a specific elememt.
+=>the id of an elememt is unique with in a page ,so the id selector is used to select one unique elememt.
+=>to select an elememt with a specific id ,write  a hash (#) character followed by the id elememt.
+#para{
+ text-align:center;
+ color:red;
+}
+4.Universal selector:
+=>the Universal selector (* )selects  all HTML  elememts on the page.
+*{
+ background-color:blue;
+ color:red;
+}
+5.Grouping selector:
+=>the Grouping selector selects the all the HTML elememts with the same style definations.
+=>to Group selectors,seperate each  selector with a comma.
+
+h1,h3,p{
+    color:red;
+}
+
+6.nested selector:
+=>the nested selector select an html elememt inside another html elememt by making a nested reference .
+=>to make a nested selector seperate each selector with a space in the hierarchy.
+
+body .center p{
+text-align:center;
+color:red;
+}
+
+***************************************************************************************
+4.what is display Inline and block?
+
+block
+ generating line breaks both before and after the element when in the normal flow.
+
+inline
+The element generates one or more inline boxes that do not generate line breaks.
+
+**************************************************************************
+5.what are css positions?
+refer Doc:static,relative,Absolute,fixed,sticky
+
+
+******************************************************************************
+6.what are pseudo elements?
+=>A CSS pseudo-element is used to style specific parts of an element.(::first-letter,::first-line,::before,::after)
+first letter or line, of an element.Insert content before or after an element.markers of list items
+*****************************************************************************
+7.what are pseudo classes?
+A pseudo-class is used to define a special state of an element.(link,visited,hover,active)
+user moves the mouse over it,visited and unvisited links differently,gets focus
+https://www.w3schools.com/css/css_pseudo_classes.asp
+
+****************************************************************************************
+8.white the code for India Flag?
+visit: code.html
+***************************************************************************************
+9.Absolute unit (px) percentage unit (%) em rem
+=>px is fixed in size no matter what screen size you choose.
+=> thats why px always performed for borders.
+=>beacasue borders also kept fixed across all screen sizes.
+
+=>% this is used to setting the width of an elememt and its always relative to its immediate parent  element size.
+
+=>em always relative to the font size of its immediate parent. 1em=48px
+=>rem root em,1 rem=60px in child
+
+*****************************************************************************************
+10.meta
+The metadata means information about data.
+ These tags are basically used to add name/value pairs to describe properties of HTML documents,
+  such as expiry date, author name, list of keywords, document author, etc.
+   This tag is an empty element because it only has an opening tag and no closing tag, but it carries information within its attributes.
+
+Syntax:
+<meta attribute-name="value">
+Key Points:
+The <meta> tag contents are not visible on your browser & is added inside the <head> tag.
+They are just used to give additional information about the HTML document.
+The <meta> tags are added to our HTML document for the purpose of Search Engine Optimisation.
+
+
+=><iframe> tag is commonly used to embed videos, maps, social media content, or external web pages.
